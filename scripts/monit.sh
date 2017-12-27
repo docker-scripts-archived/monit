@@ -14,7 +14,7 @@ EOF
 cat <<EOF > /etc/monit/conf.d/gmail
 set mailserver smtp.gmail.com port 587
     username "$GMAIL_ADDRESS" password "$GMAIL_PASSWD"
-    using ssl
+    using tlsv12
 EOF
 
 ### set the email for sending alerts
