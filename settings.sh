@@ -7,7 +7,7 @@ DOMAIN="monit.example.org"
 ### admin details
 USER=admin
 PASS=monit
-EMAIL="dashohoxha@gmail.com"
+EMAIL="user@example.org"
 
 ### Gmail account for notifications.
 ### Make sure to enable less-secure-apps:
