@@ -11,7 +11,8 @@ RUN find /etc/systemd/system \
 RUN systemctl set-default multi-user.target
 CMD ["/sbin/init"]
 
-RUN apt-get update; apt-get -y upgrade
-RUN apt-get -y install monit apache2
+RUN apt-get update && apt-get -y upgrade
+RUN apt-get -y install monit 
+RUN apt install -y apache2
 
 WORKDIR /host
