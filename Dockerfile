@@ -1,12 +1,3 @@
-FROM ubuntu:18.04
+include(bionic)
 
-### install systemd
-RUN apt update && \
-    apt -y upgrade && \
-    apt -y install systemd && \
-    systemctl set-default multi-user.target
-
-CMD ["/sbin/init"]
-WORKDIR /host
-
-RUN apt -y install monit apache2
+RUN apt install --yes monit apache2
